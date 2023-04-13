@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.oplus.widevine" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="false" android:theme="@style/Theme.AppCompat.Light" android:usesCleartextTraffic="true">
+        <activity android:label="oplus keys" android:name="com.oplus.widevine.MainActivity" android:permission="oppo.permission.OPPO_COMPONENT_SAFE">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.oplus.widevine.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+    </application>
+</manifest>
